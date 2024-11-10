@@ -1,0 +1,28 @@
+#main{
+    background-color: var(--color-primary-silver);
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 500px;
+    padding: 0 8%;
+}
+
+#main .main-conteudo h1{
+    max-width: 600px;
+    font-size: 3.8rem;
+    color: var(--color-primary-gray);
+}
+
+#main .main-conteudo h1 > strong{
+    color: var(--color-primary-green);
+}
+
+#main .main-img img{
+    width: 350px;
+}
+
+#main .main-conteudo p{
+    margin-top: 0.5rem;
+    color: var(--color-primary-gray);
+}

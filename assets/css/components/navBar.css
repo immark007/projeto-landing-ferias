@@ -9,7 +9,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center; 
-    padding: 20px 0px;
+    padding: 1.4rem 0rem;
 }
 
 .navigation .logo-navigation{
@@ -27,7 +27,7 @@
 
 
 .navigation .section-navigation ul > li{
-    margin-left: 30px;
+    margin-left: 2rem;
 }
 
 .navigation .section-navigation ul > li > a {
@@ -36,15 +36,60 @@
 }
 
 .navigation .section-navigation button{
-    margin-left: 30px;
+    margin-left: 2rem;
     background-color: var(--color-primary-green);
-    padding: 12px 24px;
+    padding: 0.75rem 1.5rem;
     border: none;
-    border-radius: 5px;
+    border-radius: 0.312rem;
     color: var(--color-primary-white);
     font-weight: 400;
+    cursor: pointer;
 }
 
 .navigation .section-navigation button > i{
-    margin-left: 10px;
+    margin-left: 0.6rem;
+}
+
+.mobile-menu-icon{
+    display: none;
+}
+
+.mobile-menu{
+    display: none;
+}
+
+@media screen and (max-width:769px){
+    .navigation{
+        padding: 1.5rem 0.1rem;
+    }
+    .navigation .section-navigation{
+        display: none;
+    }
+
+    .mobile-menu-icon{
+        display: block;
+    }
+
+    .mobile-menu-icon button{
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        color: var(--color-primary-gray);
+        font-size: 1.5rem;
+    }
+
+    .mobile-menu{
+        display: none;
+        padding-top: 1.2rem;
+        transition: opacity 0.3s ease;
+    }
+
+    .mobile-menu button{
+        width: 100%;
+    }
+
+    .mobile-menu.open{
+        display: block;
+        opacity: 1;
+    }
 }

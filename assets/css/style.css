@@ -3,3 +3,4 @@
 @import url('base/global.css');
 /*Estilos de componentes*/
 @import url('components/navBar.css');
+@import url('components/main.css');

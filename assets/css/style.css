@@ -1,0 +1,5 @@
+/*Estilos default*/
+@import url('base/reset.css');
+@import url('base/global.css');
+/*Estilos de componentes*/
+@import url('components/navBar.css');

@@ -79,13 +79,39 @@
     }
 
     .mobile-menu{
+        width: 100%;
         display: none;
         padding-top: 1.2rem;
         transition: opacity 0.3s ease;
+        align-items: center;
+        padding: 1rem 1.8rem;
+    }
+
+    .mobile-menu ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        list-style: none;
+        gap: 0.5rem;
+    }
+
+    .mobile-menu ul li a{
+        text-decoration: none;
+        color: var(--color-primary-gray);
+        font-size: 1.2rem;
     }
 
     .mobile-menu button{
         width: 100%;
+        margin-top: 1rem;
+        background-color: var(--color-primary-green);
+        padding: 0.75rem 1.5rem;
+        border: none;
+        border-radius: 0.312rem;
+        color: var(--color-primary-white);
+        font-weight: 400;
+        cursor: pointer;
+        font-size: 1.1rem;
     }
 
     .mobile-menu.open{

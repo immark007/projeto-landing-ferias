@@ -61,7 +61,8 @@
 
 @media screen and (max-width:769px){
     .navigation{
-        padding: 1rem 0.1rem;
+        justify-content: space-between;
+        padding: 1rem 0.9rem;
 
     }
     .navigation .section-navigation{
@@ -122,5 +123,5 @@
     }
 
 
-    
+
 }

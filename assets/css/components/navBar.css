@@ -3,13 +3,14 @@
 #navBar{
     width: 100%;
     height: auto;
+    align-items: center;
 }
 
 .navigation{
     display: flex;
     justify-content: space-around;
     align-items: center; 
-    padding: 1.4rem 0rem;
+    padding: 1rem 0rem;
 }
 
 .navigation .logo-navigation{
@@ -60,7 +61,8 @@
 
 @media screen and (max-width:769px){
     .navigation{
-        padding: 1.5rem 0.1rem;
+        padding: 1rem 0.1rem;
+
     }
     .navigation .section-navigation{
         display: none;
@@ -118,4 +120,7 @@
         display: block;
         opacity: 1;
     }
+
+
+    
 }

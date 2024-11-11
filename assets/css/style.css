@@ -4,6 +4,7 @@
 /*Estilos de componentes*/
 @import url('components/navBar.css');
 @import url('components/main.css');
+@import url('components/cliente.css');
 /* Button componentes */
 @import url('components/button.css');
 /* animations */

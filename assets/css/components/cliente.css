@@ -1,6 +1,6 @@
 #section-client{
-    width: 100%;
-    display: flex;
+    width: min(1200px, 90vw);
+    margin: auto;
     flex-direction: column;
     justify-content: center;
     align-items: center;

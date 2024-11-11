@@ -19,25 +19,31 @@ const dots = document.querySelectorAll(".dot");
 
 function showSlide(index) {
     slides.forEach((slide, i) => {
-        slide.classList.toggle("active", i === index);
+        slide.classList.remove("active", "previous", "next");
+        if (i === index) {
+            slide.classList.add("active");
+        } else if (i === currentSlide) {
+            slide.classList.add(index > currentSlide ? "previous" : "next");
+        }
     });
     dots.forEach((dot, i) => {
         dot.classList.toggle("active", i === index);
     });
+    currentSlide = index;
 }
+
 function nextSlide() {
-    currentSlide = (currentSlide + 1) % slides.length;
-    showSlide(currentSlide);
+    const newIndex = (currentSlide + 1) % slides.length;
+    showSlide(newIndex);
 }
 
 function previousSlide() {
-    currentSlide = (currentSlide - 1 + slides.length) % slides.length;
-    showSlide(currentSlide);
+    const newIndex = (currentSlide - 1 + slides.length) % slides.length;
+    showSlide(newIndex);
 }
 
 function goToSlide(index) {
-    currentSlide = index;
-    showSlide(currentSlide);
+    showSlide(index);
 }
 
 showSlide(currentSlide);

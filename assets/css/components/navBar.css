@@ -124,11 +124,6 @@
         font-size: 0.9rem;
     }
 
-    .mobile-menu button > i{
-        font-size: 0.8rem;
-        margin-left: 0.5rem;
-    }
-    
 
     .mobile-menu.open{
         left: 0;

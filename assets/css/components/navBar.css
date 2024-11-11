@@ -115,14 +115,20 @@
         width: 80%;
         margin-top: 2rem;
         background-color: var(--color-primary-green);
-        padding: 0.75rem 1.5rem;
+        padding: 0.7rem 1.3rem;
         border: none;
         border-radius: 0.312rem;
         color: var(--color-primary-white);
         font-weight: 400;
         cursor: pointer;
-        font-size: 1.1rem;
+        font-size: 0.9rem;
     }
+
+    .mobile-menu button > i{
+        font-size: 0.8rem;
+        margin-left: 0.5rem;
+    }
+    
 
     .mobile-menu.open{
         left: 0;

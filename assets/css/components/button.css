@@ -1,0 +1,11 @@
+.button-component{
+    margin-top: 2rem;
+    background-color: var(--color-primary-green);
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 0.312rem;
+    color: var(--color-primary-white);
+    font-weight: 400;
+    cursor: pointer;
+    font-size: 1.1rem;
+}

@@ -8,70 +8,81 @@
     <title>Landing-ferias</title>
 </head>
 <body>
-    <head id="navBar">
+    <!-- Menu -->
+    <header id="navBar">
         <nav class="navigation">
             <div class="logo-navigation">
                 <img src="assets/img/img-menu/Logo.png" alt="logo">
             </div>
             <div class="section-navigation">
                 <ul>
-                    <li>
-                        <a href="#">Home</a>
-                    </li>
-                    <li>
-                        <a href="#">Features</a>
-                    </li>
-                    <li>
-                        <a href="#">Community</a>
-                    </li>
-                    <li>
-                        <a href="#">Blog</a>
-                    </li>
-                    <li>
-                        <a href="#">Pricing</a>
-                    </li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Community</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Pricing</a></li>
                 </ul>
                 <button class="register">Register Now <i class="fa-solid fa-arrow-right"></i></button>
             </div>
-
             <div class="mobile-menu-icon">
                 <button onclick="menuShow()"><i id="menu-icon" class="fa-solid fa-bars"></i></button>
             </div>
         </nav>
-
         <div class="mobile-menu">
             <ul>
-                <li>
-                    <a href="#">Home</a>
-                </li>
-                <li>
-                    <a href="#">Features</a>
-                </li>
-                <li>
-                    <a href="#">Community</a>
-                </li>
-                <li>
-                    <a href="#">Blog</a>
-                </li>
-                <li>
-                    <a href="#">Pricing</a>
-                </li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Community</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Pricing</a></li>
             </ul>
             <button class="register">Register Now <i class="fa-solid fa-arrow-right"></i></button>
         </div>
-    </head>
+    </header>
 
-    <!-- <main id="main">
-        <div class="main-conteudo">
-            <h1>Lessons and insights <strong>from 8 years</strong></h1>
-            <p>Where to grow your business as a photographer: site or social media?</p>
-            <button>Register</button>
-        </div>
-        <div class="main-img">
-            <img src="assets/img/img-main/Illustration.png" alt="img-main">
-        </div>
-    </main> -->
+    <!-- Container de slides -->
+    <main id="slides-container">
+        <section class="slide active">
+            <div class="main-content">
+                <h1>Lessons and insights <strong>from 8 years</strong></h1>
+                <p>Where to grow your business as a photographer: site or social media?</p>
+                <button class="button-component">Register</button>
+            </div>
+            <div class="main-img">
+                <img src="assets/img/img-main/land.svg" alt="img-main">
+            </div>
+        </section>
 
+        <section class="slide">
+            <div class="main-content">
+                <h1>Discover New <strong>Opportunities</strong></h1>
+                <p>Learn how to make the most out of online platforms for your photography business.</p>
+                <button class="button-component">Explore</button>
+            </div>
+            <div class="main-img">
+                <img src="assets/img/img-main/person-managing.svg" alt="img-main">
+            </div>
+        </section>
+
+        <section class="slide">
+            <div class="main-content">
+                <h1>Grow Your <strong>Community</strong></h1>
+                <p>Engage with others and expand your reach in the photography world.</p>
+                <button class="button-component">Join Now</button>
+            </div>
+            <div class="main-img">
+                <img src="assets/img/img-main/img3.png" alt="img-main">
+            </div>
+        </section>
+    </main>
+
+    <!-- Indicadores de slides -->
+
+    <div class="slide-indicators">
+        <span class="dot active" onclick="goToSlide(0)"></span>
+        <span class="dot" onclick="goToSlide(1)"></span>
+        <span class="dot" onclick="goToSlide(2)"></span>
+    </div>
 
     <script src="assets/js/script.js"></script>
 </body>

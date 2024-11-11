@@ -1,28 +1,120 @@
-#main{
-    background-color: var(--color-primary-silver);
-    width: 100%;
-    display: flex;
+#slides-container {
+    position: relative;
+    overflow: hidden;
     justify-content: space-around;
     align-items: center;
     height: 500px;
-    padding: 0 8%;
+    display: flex;
+    background-color: var(--color-primary-silver);
 }
 
-#main .main-conteudo h1{
+.slide {
+    display: none;
+    width: 100%;
+    transition: opacity 0.5s ease;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 14%;
+}
+
+.slide .main-content h1{
     max-width: 600px;
     font-size: 3.8rem;
     color: var(--color-primary-gray);
 }
 
-#main .main-conteudo h1 > strong{
+.slide .main-content h1 > strong{
     color: var(--color-primary-green);
 }
 
-#main .main-img img{
+.slide .main-content p{
+    margin-top: 0.6rem;
+    color: var(--color-primary-gray);
+}
+
+.slide.active {
+    display: flex;
+
+}
+
+.slide .main-img img{
     width: 350px;
 }
 
-#main .main-conteudo p{
-    margin-top: 0.5rem;
-    color: var(--color-primary-gray);
+.slide-navigation {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.slide-indicators {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    background-color: #ddd;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.dot.active {
+    background-color: var(--color-primary-green);
+}
+
+
+@media (max-width: 1180px) {
+    #slides-container {
+        height: auto;
+        flex-direction: column;
+        padding: 0 2rem;
+    }
+
+    .slide {
+        flex-direction: column;
+        text-align: center; 
+        padding: 2.5rem 0px;
+    }
+
+    .slide .main-content{
+        order: 2;
+    }
+
+    .slide .main-content h1 {
+        font-size: 2.5rem;
+        max-width: 100%;
+    }
+
+    .slide .main-img{
+        order: 1;
+    }
+    .slide .main-img img {
+        width: 100%;
+        max-width: 300px;
+        margin-top: 1rem;
+    }
+
+    .button-component {
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .slide .main-content h1 {
+        font-size: 2rem;
+    }
+
+    .slide .main-content p {
+        font-size: 1rem;
+    }
+
+    .slide .main-img img {
+        max-width: 250px;
+    }
 }

@@ -79,6 +79,12 @@
 }
 
 
+@media (min-width: 1800px){
+    .slide{
+        padding: 0 20%;
+    }
+}
+
 @media (max-width: 1180px) {
     #slides-container {
         height: auto;

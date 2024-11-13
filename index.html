@@ -17,10 +17,10 @@
             <div class="section-navigation">
                 <ul>
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">Features</a></li>
-                    <li><a href="#">Community</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#section-client">Features</a></li>
+                    <li><a href="#section-helping">Community</a></li>
+                    <li><a href="#section-caring">Blog</a></li>
+                    <li><a href="#footer-content">Pricing</a></li>
                 </ul>
                 <button class="register">Register Now <i class="fa-solid fa-arrow-right"></i></button>
             </div>
@@ -31,10 +31,10 @@
         <div class="mobile-menu">
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="#">Features</a></li>
-                <li><a href="#">Community</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Pricing</a></li>
+                <li><a href="#section-client">Features</a></li>
+                <li><a href="#section-helping">Community</a></li>
+                <li><a href="#section-caring">Blog</a></li>
+                <li><a href="#footer-content">Pricing</a></li>
             </ul>
             <button class="register">Register Now</button>
         </div>
@@ -45,7 +45,7 @@
         <section class="slide active">
             <div class="main-content">
                 <h1>Lessons and insights <strong>from 8 years</strong></h1>
-                <p>Where to grow your business as a photographer: site or social media?</p>
+                <p class="p-main">Where to grow your business as a photographer: site or social media?</p>
                 <button class="button-component">Register</button>
             </div>
             <div class="main-img">
@@ -153,7 +153,7 @@
     </section>
 
     <!-- seção de vídeo -->
-    <section class="section-helping">
+    <section class="section-helping" id="section-helping">
         <div class="section-helping-content">
             <h1 class="section-helping-title">why does it work?</h1>
             <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters</p>
@@ -181,7 +181,7 @@
     
 
     <!-- Seção de cards animados -->
-    <section class="section-caring">
+    <section class="section-caring" id="section-caring">
         <div class="card-animation-container">
             <div class="card__container">
                 <article class="card__article">
@@ -214,6 +214,78 @@
             </div>
         </div>
     </section>
+
+    <footer>
+        <div id="footer-content">
+            <div id="footer-contacts">
+                <img src="assets/img/img-menu/Logo.svg" alt="logo">
+                <p>It´s all about your dreams</p>
+
+                <div id="footer-social-media">
+                    <a href="#" class="footer-link" id="instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="#" class="footer-link" id="facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a href="#" class="footer-link" id="whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+
+            <ul class="footer-list">
+                <li>
+                    <h3>Blog</h3>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Tech</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Adventures</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Music</a>
+                </li>
+            </ul>
+
+            <ul class="footer-list">
+                <li>
+                    <h3>Products</h3>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">App</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Desktop</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Cloud</a>
+                </li>
+            </ul>
+
+            <div id="footer-subscribe">
+                <h3>Subscribe</h3>
+
+                <p>
+                    Enter your e-mail to get notified about our news solutions
+                </p>
+
+                <div id="input-group">
+                    <input type="email" id="email">
+                    <button>
+                        <i class="fa-regular fa-envelope"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer-copy">
+            &#169 2024 - Marcos Kauã
+        </div>
+    </footer>
     <script src="assets/js/script.js"></script>
 </body>
 </html>

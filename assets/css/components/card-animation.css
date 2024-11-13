@@ -1,11 +1,12 @@
 .section-caring{
-    padding: 20px 0px;
+    padding: 12% 0px;
+    background-color: var(--color-primary-silver);
 }
 .card-animation-container {
     display: grid;
     place-items: center;
     margin-inline: 1.5rem;
-    max-height: 500px;
+    max-height: 100%;
 }
 
 .card-animation-container img{
@@ -90,6 +91,7 @@
   .card-animation-container {
     margin-inline: 1rem;
     padding: 10px 0;
+    height: 800px;
   }
 
   .card__data {
@@ -112,7 +114,7 @@
 
 @media screen and (min-width: 1120px) {
   .card-animation-container {
-    height: 100vh;
+    height: 500px;
   }
 
   .card__container {

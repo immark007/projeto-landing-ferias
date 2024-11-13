@@ -33,6 +33,11 @@
 .navigation .section-navigation ul > li > a {
     text-decoration: none;
     color: var(--color-primary-gray);
+    transition: all 0.4s;
+}
+
+.navigation .section-navigation ul > li > a:hover{
+    color: var(--color-primary-green);
 }
 
 .navigation .section-navigation button{
@@ -109,6 +114,11 @@
         text-decoration: none;
         color: var(--color-primary-gray);
         font-size: 1.2rem;
+        transition: all 0.4s;
+    }
+
+    .mobile-menu ul li a:hover{
+        color: var(--color-primary-green);
     }
 
     .mobile-menu button{

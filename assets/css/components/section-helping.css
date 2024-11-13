@@ -67,7 +67,7 @@
 }
 
 
-@media (max-width: 1194px){
+@media (max-width: 1280px){
     .section-helping {
         flex-direction: column-reverse;
         padding: 5% 5%;

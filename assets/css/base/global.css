@@ -16,7 +16,12 @@
     --small-font-size: .813rem;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 
 html, body{
     font-family: "Inter", sans-serif;
+    scroll-behavior: smooth;
 }

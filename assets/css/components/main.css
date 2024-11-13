@@ -85,7 +85,7 @@
     }
 }
 
-@media (max-width: 1280px){
+@media (min-width: 1280px){
 
     .slide{
         padding: 0 10%;
@@ -95,7 +95,7 @@
     }
 
     .slide .main-content p{
-        max-width: 80%;
+        width: 80%;
     }
 }
 
@@ -104,6 +104,8 @@
         height: auto;
         flex-direction: column;
         padding: 0 2rem;
+        text-align: center;
+        align-items: center;
     }
 
     .slide {
@@ -119,6 +121,10 @@
     .slide .main-content h1 {
         font-size: 2.5rem;
         max-width: 100%;
+    }
+
+    .slide .main-content .p-main{
+        text-align: center;
     }
 
     .slide .main-img{

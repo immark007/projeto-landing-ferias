@@ -6,6 +6,14 @@
     --color-primary-silver: #F5F7FA;
     --color-primary-white: #FFFFFF;
     --color-primary-gray-title: #717171;
+
+    --first-color: hsl(82, 60%, 28%);
+    --title-color: hsl(0, 0%, 15%);
+    --text-color: hsl(0, 0%, 35%);
+    --body-color: hsl(0, 0%, 95%);
+    --container-color: hsl(0, 0%, 100%);
+    --h2-font-size: 1.25rem;
+    --small-font-size: .813rem;
 }
 
 

@@ -45,7 +45,7 @@
 @media (max-width: 768px) {
     .section-helping {
         flex-direction: column-reverse;
-        padding: 5% 5%;
+        padding: 8% 5%;
         align-items: center;
     }
 
@@ -65,3 +65,18 @@
         height: 200px;
     }
 }
+
+
+@media (max-width: 1194px){
+    .section-helping {
+        flex-direction: column-reverse;
+        padding: 5% 5%;
+        align-items: center;
+    }
+    .section-helping .section-helping-content,
+    .section-helping .section-helping-video {
+        width: 100%;
+        text-align: center;
+    }
+}
+

@@ -85,6 +85,20 @@
     }
 }
 
+@media (max-width: 1280px){
+
+    .slide{
+        padding: 0 10%;
+    }
+    .slide .main-content h1{
+        font-size: 3.5rem;
+    }
+
+    .slide .main-content p{
+        max-width: 80%;
+    }
+}
+
 @media (max-width: 1180px) {
     #slides-container {
         height: auto;

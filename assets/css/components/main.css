@@ -79,7 +79,7 @@
 }
 
 
-@media (min-width: 1800px){
+@media (max-width: 1800px){
     .slide{
         padding: 0 20%;
     }
